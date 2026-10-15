@@ -82,7 +82,7 @@ struct SetupCardView: View {
             Text("•")
             Text(text).fixedSize(horizontal: false, vertical: true)
         }
-        .foregroundStyle(warn ? Color.orange : (dim ? Color.secondary : Color.primary))
+        .foregroundStyle(warn ? Color.warningText : (dim ? Color.secondary : Color.primary))
     }
 
     // MARK: Already set
@@ -118,7 +118,7 @@ struct SetupCardView: View {
                     Text(line.trimmingCharacters(in: .whitespaces)).fixedSize(horizontal: false, vertical: true)
                 }
             }
-            .foregroundStyle(Color.orange)
+            .foregroundStyle(Color.warningText)
         }
         HStack {
             Spacer()

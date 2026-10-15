@@ -230,7 +230,7 @@ struct TicketRowView: View {
                         .padding(.horizontal, 5)
                         .padding(.vertical, 1)
                         .background(Capsule().fill(Color.orange.opacity(0.22)))
-                        .foregroundStyle(Color.orange)
+                        .foregroundStyle(Color.warningText)
                         .fixedSize()
                         .help(row.reasonHelp ?? "")
                 }
@@ -423,7 +423,7 @@ struct FooterView: View {
             }
             if host.iconHidden {
                 Text(Self.hiddenIconHint)
-                    .foregroundStyle(Color.orange)
+                    .foregroundStyle(Color.warningText)
                     .fixedSize(horizontal: false, vertical: true)
             }
             HStack(spacing: 8) {
